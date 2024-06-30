@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up Form</title>
+</head>
+
+<body>
+    <div class="logo-area">
+        <div class="logo">
+            <img src="odin-lined.png" alt="Odin logo">
+            <span>ODIN</span>
+        </div>
+    </div>
+    <main>
+        <div class="hero">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams.</p>
+            <p>Sign up <span class="italicized">now</span> to get started.</p>
+            <br>
+            <p>You <span class="italicized">know</span> you want to.</p>
+        </div>
+        <div class="form-area">
+            <p>Let's do this!</p>
+            <form action="" id="the-form">
+                <div class="field">
+                    <label for="name">FIRST NAME <span class="require">*</span></label>
+                    <input id="name" type="text" required>
+                </div>
+                <div class="field">
+                    <label for="surname">LAST NAME <span class="require">*</span></label>
+                    <input type="text" id="surname" required>
+                </div>
+                <div class="field">
+                    <label for="email">EMAIL <span class="require">*</span></label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="field">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                </div>
+                <div class="field">
+                    <label for="password">PASSWORD <span class="require">*</span></label>
+                    <input type="password" id="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                </div>
+                <div class="field">
+                    <label for="password-confirm">CONFIRM PASSWORD <span class="require">*</span></label>
+                    <input type="password" id="password-confirm" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                </div>
+            </form>
+        </div>
+        <div class="sign-up">
+            <button type="submit" form="the-form">Create Account</button>
+            <p class="login">Already have an account? <a href="">Log in</a></p>
+        </div>
+    </main>
+</body>
+
+</html>
